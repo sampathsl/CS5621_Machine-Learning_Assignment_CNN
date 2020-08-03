@@ -5,7 +5,6 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Dense
 from keras.layers import Flatten
-from keras.optimizers import SGD
 from keras.layers import Dropout
 
 # load the data set
@@ -39,10 +38,10 @@ model = Sequential()
 input_shape = (28, 28, 1)
 
 # first 32 neuron layer
-model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', input_shape=input_shape))
+model.add(Conv2D(32, (5, 5), activation='relu', input_shape=input_shape))
 
 # define the max pool
-model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(MaxPooling2D())
 
 # create the drop out layer
 model.add(Dropout(0.2))
@@ -51,18 +50,16 @@ model.add(Dropout(0.2))
 model.add(Flatten())
 
 # add a dense layer
-model.add(Dense(100, activation='relu', kernel_initializer='he_uniform'))
+model.add(Dense(128, activation='relu'))
 
 # add a dense layer
 model.add(Dense(10, activation='softmax'))
 
-opt = SGD(lr=0.01, momentum=0.9)
-
 # compile the model
-model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # train the model with train data
-model.fit(X_train, Y_train, epochs=20, batch_size=32, validation_data=(X_test, Y_test), verbose=1)
+model.fit(X_train, Y_train, epochs=20, batch_size=200, validation_data=(X_test, Y_test), verbose=1)
 
 # test the model with test data
 loss, accuracy = model.evaluate(X_test, Y_test, verbose=0)

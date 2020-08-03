@@ -7,8 +7,6 @@ from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Dense
 from keras.layers import Flatten
-from keras.optimizers import SGD
-from keras.layers import Dropout
 
 # load the data set
 (X_train, Y_train), (X_test, Y_test) = mnist.load_data()
@@ -41,27 +39,23 @@ model = Sequential()
 input_shape = (28, 28, 1)
 
 # first 32 neuron layer
-model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', input_shape=input_shape))
+model.add(Conv2D(32, (5, 5), activation='relu', input_shape=input_shape))
 
 # define the max pool
-model.add(MaxPooling2D(pool_size=(2, 2)))
-
-# create the drop out layer
-model.add(Dropout(0.3))
+model.add(MaxPooling2D())
 
 # flatten the images
 model.add(Flatten())
 
 # add a dense layer
-model.add(Dense(100, activation='relu', kernel_initializer='he_uniform'))
+model.add(Dense(128, activation='relu'))
 
 # add a dense layer
-model.add(Dense(10, activation='softmax'))
-
-opt = SGD(lr=0.01, momentum=0.9)
+num_classes = 10
+model.add(Dense(num_classes, activation='softmax'))
 
 # compile the model
-model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # define the noise factor
 noise_factor = 0.25
@@ -71,7 +65,7 @@ X_train = np.clip(X_train, 0., 1.)
 X_test = np.clip(X_test, 0., 1.)
 
 # train the model with train data
-model.fit(X_train, Y_train, epochs=20, batch_size=32, validation_data=(X_test, Y_test), verbose=1)
+model.fit(X_train, Y_train, epochs=20, batch_size=200, validation_data=(X_test, Y_test), verbose=1)
 
 # test the model with test data
 loss, accuracy = model.evaluate(X_test, Y_test, verbose=0)

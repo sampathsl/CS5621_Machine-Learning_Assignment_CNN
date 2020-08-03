@@ -1,65 +1,65 @@
 C:\Users\SAMPATH-T\anaconda3\python.exe K:/IDEA_PROJECTS/CS5621_Machine-Learning_Assignment_CNN/1.py
-2020-08-03 13:42:29.977354: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
-2020-08-03 13:42:33.724074: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
-2020-08-03 13:42:34.014266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+2020-08-03 15:22:08.622155: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-08-03 15:22:11.874996: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
+Epoch 1/20
+2020-08-03 15:22:12.175932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
 pciBusID: 0000:01:00.0 name: GeForce 940M computeCapability: 5.0
 coreClock: 1.176GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 13.41GiB/s
-2020-08-03 13:42:34.014781: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
-2020-08-03 13:42:34.020299: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
-2020-08-03 13:42:34.024864: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
-2020-08-03 13:42:34.026834: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
-2020-08-03 13:42:34.032597: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
-2020-08-03 13:42:34.036963: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
-2020-08-03 13:42:34.038479: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudnn64_7.dll'; dlerror: cudnn64_7.dll not found
-2020-08-03 13:42:34.038766: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+2020-08-03 15:22:12.176424: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-08-03 15:22:12.181481: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-08-03 15:22:12.185570: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
+2020-08-03 15:22:12.187220: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
+2020-08-03 15:22:12.192508: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
+2020-08-03 15:22:12.197197: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
+2020-08-03 15:22:12.198669: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudnn64_7.dll'; dlerror: cudnn64_7.dll not found
+2020-08-03 15:22:12.198991: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
 Skipping registering GPU devices...
-2020-08-03 13:42:34.039720: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+2020-08-03 15:22:12.199964: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2020-08-03 13:42:34.050315: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1f4174d6600 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2020-08-03 13:42:34.050791: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2020-08-03 13:42:34.051135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
-2020-08-03 13:42:34.051415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
-Epoch 1/20
-1875/1875 [==============================] - 31s 17ms/step - loss: 0.1809 - accuracy: 0.9438 - val_loss: 0.0748 - val_accuracy: 0.9761
+2020-08-03 15:22:12.210289: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x22659fb5100 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-08-03 15:22:12.210732: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-08-03 15:22:12.211166: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-08-03 15:22:12.211523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+300/300 [==============================] - 24s 78ms/step - loss: 0.2639 - accuracy: 0.9236 - val_loss: 0.0937 - val_accuracy: 0.9705
 Epoch 2/20
-1875/1875 [==============================] - 32s 17ms/step - loss: 0.0661 - accuracy: 0.9799 - val_loss: 0.0570 - val_accuracy: 0.9814
+300/300 [==============================] - 24s 81ms/step - loss: 0.0790 - accuracy: 0.9764 - val_loss: 0.0518 - val_accuracy: 0.9830
 Epoch 3/20
-1875/1875 [==============================] - 32s 17ms/step - loss: 0.0455 - accuracy: 0.9859 - val_loss: 0.0556 - val_accuracy: 0.9817
+300/300 [==============================] - 25s 82ms/step - loss: 0.0567 - accuracy: 0.9827 - val_loss: 0.0447 - val_accuracy: 0.9847
 Epoch 4/20
-1875/1875 [==============================] - 31s 16ms/step - loss: 0.0350 - accuracy: 0.9893 - val_loss: 0.0412 - val_accuracy: 0.9858
+300/300 [==============================] - 24s 82ms/step - loss: 0.0448 - accuracy: 0.9862 - val_loss: 0.0421 - val_accuracy: 0.9850
 Epoch 5/20
-1875/1875 [==============================] - 32s 17ms/step - loss: 0.0264 - accuracy: 0.9916 - val_loss: 0.0403 - val_accuracy: 0.9871
+300/300 [==============================] - 24s 79ms/step - loss: 0.0369 - accuracy: 0.9883 - val_loss: 0.0378 - val_accuracy: 0.9870
 Epoch 6/20
-1875/1875 [==============================] - 30s 16ms/step - loss: 0.0213 - accuracy: 0.9931 - val_loss: 0.0431 - val_accuracy: 0.9869
+300/300 [==============================] - 24s 79ms/step - loss: 0.0301 - accuracy: 0.9906 - val_loss: 0.0379 - val_accuracy: 0.9884
 Epoch 7/20
-1875/1875 [==============================] - 30s 16ms/step - loss: 0.0172 - accuracy: 0.9944 - val_loss: 0.0426 - val_accuracy: 0.9857
+300/300 [==============================] - 24s 79ms/step - loss: 0.0253 - accuracy: 0.9915 - val_loss: 0.0353 - val_accuracy: 0.9883
 Epoch 8/20
-1875/1875 [==============================] - 29s 16ms/step - loss: 0.0146 - accuracy: 0.9954 - val_loss: 0.0424 - val_accuracy: 0.9864
+300/300 [==============================] - 24s 79ms/step - loss: 0.0206 - accuracy: 0.9936 - val_loss: 0.0343 - val_accuracy: 0.9882
 Epoch 9/20
-1875/1875 [==============================] - 31s 17ms/step - loss: 0.0118 - accuracy: 0.9964 - val_loss: 0.0392 - val_accuracy: 0.9885
+300/300 [==============================] - 24s 79ms/step - loss: 0.0182 - accuracy: 0.9941 - val_loss: 0.0340 - val_accuracy: 0.9884
 Epoch 10/20
-1875/1875 [==============================] - 30s 16ms/step - loss: 0.0093 - accuracy: 0.9973 - val_loss: 0.0403 - val_accuracy: 0.9885
+300/300 [==============================] - 24s 79ms/step - loss: 0.0158 - accuracy: 0.9948 - val_loss: 0.0345 - val_accuracy: 0.9890
 Epoch 11/20
-1875/1875 [==============================] - 35s 19ms/step - loss: 0.0084 - accuracy: 0.9975 - val_loss: 0.0404 - val_accuracy: 0.9881
+300/300 [==============================] - 24s 78ms/step - loss: 0.0145 - accuracy: 0.9949 - val_loss: 0.0330 - val_accuracy: 0.9892
 Epoch 12/20
-1875/1875 [==============================] - 35s 19ms/step - loss: 0.0069 - accuracy: 0.9978 - val_loss: 0.0460 - val_accuracy: 0.9871
+300/300 [==============================] - 24s 79ms/step - loss: 0.0120 - accuracy: 0.9961 - val_loss: 0.0319 - val_accuracy: 0.9910
 Epoch 13/20
-1875/1875 [==============================] - 31s 16ms/step - loss: 0.0059 - accuracy: 0.9983 - val_loss: 0.0505 - val_accuracy: 0.9856
+300/300 [==============================] - 24s 79ms/step - loss: 0.0114 - accuracy: 0.9962 - val_loss: 0.0359 - val_accuracy: 0.9880
 Epoch 14/20
-1875/1875 [==============================] - 33s 18ms/step - loss: 0.0050 - accuracy: 0.9986 - val_loss: 0.0451 - val_accuracy: 0.9883
+300/300 [==============================] - 24s 79ms/step - loss: 0.0091 - accuracy: 0.9971 - val_loss: 0.0334 - val_accuracy: 0.9896
 Epoch 15/20
-1875/1875 [==============================] - 33s 18ms/step - loss: 0.0055 - accuracy: 0.9983 - val_loss: 0.0454 - val_accuracy: 0.9884
+300/300 [==============================] - 24s 79ms/step - loss: 0.0088 - accuracy: 0.9969 - val_loss: 0.0354 - val_accuracy: 0.9896
 Epoch 16/20
-1875/1875 [==============================] - 31s 17ms/step - loss: 0.0052 - accuracy: 0.9985 - val_loss: 0.0430 - val_accuracy: 0.9890
+300/300 [==============================] - 24s 78ms/step - loss: 0.0080 - accuracy: 0.9973 - val_loss: 0.0380 - val_accuracy: 0.9891
 Epoch 17/20
-1875/1875 [==============================] - 29s 16ms/step - loss: 0.0042 - accuracy: 0.9988 - val_loss: 0.0455 - val_accuracy: 0.9868
+300/300 [==============================] - 24s 79ms/step - loss: 0.0064 - accuracy: 0.9980 - val_loss: 0.0415 - val_accuracy: 0.9886
 Epoch 18/20
-1875/1875 [==============================] - 29s 16ms/step - loss: 0.0043 - accuracy: 0.9987 - val_loss: 0.0401 - val_accuracy: 0.9883
+300/300 [==============================] - 24s 79ms/step - loss: 0.0072 - accuracy: 0.9976 - val_loss: 0.0397 - val_accuracy: 0.9888
 Epoch 19/20
-1875/1875 [==============================] - 29s 16ms/step - loss: 0.0035 - accuracy: 0.9992 - val_loss: 0.0482 - val_accuracy: 0.9881
+300/300 [==============================] - 24s 78ms/step - loss: 0.0067 - accuracy: 0.9978 - val_loss: 0.0366 - val_accuracy: 0.9898
 Epoch 20/20
-1875/1875 [==============================] - 30s 16ms/step - loss: 0.0029 - accuracy: 0.9992 - val_loss: 0.0411 - val_accuracy: 0.9886
-Loss for the CNN model = 0.041
-Accuracy for the CNN model = 98.860
+300/300 [==============================] - 24s 79ms/step - loss: 0.0054 - accuracy: 0.9982 - val_loss: 0.0378 - val_accuracy: 0.9902
+Loss for the CNN model = 0.038
+Accuracy for the CNN model = 99.020
 
 Process finished with exit code 0
