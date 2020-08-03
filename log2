@@ -1,0 +1,65 @@
+C:\Users\SAMPATH-T\anaconda3\python.exe K:/IDEA_PROJECTS/CS5621_Machine-Learning_Assignment_CNN/2.py
+2020-08-03 14:01:28.112543: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-08-03 14:01:31.634401: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
+2020-08-03 14:01:31.910377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce 940M computeCapability: 5.0
+coreClock: 1.176GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 13.41GiB/s
+2020-08-03 14:01:31.910853: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-08-03 14:01:31.916406: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-08-03 14:01:31.920822: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
+2020-08-03 14:01:31.922647: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
+2020-08-03 14:01:31.928695: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
+2020-08-03 14:01:31.933328: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
+2020-08-03 14:01:31.934759: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudnn64_7.dll'; dlerror: cudnn64_7.dll not found
+2020-08-03 14:01:31.935184: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-08-03 14:01:31.936390: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-08-03 14:01:31.946627: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1c6e9cf29e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-08-03 14:01:31.947171: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-08-03 14:01:31.947631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-08-03 14:01:31.948092: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+Epoch 1/20
+1875/1875 [==============================] - 33s 18ms/step - loss: 0.2588 - accuracy: 0.9207 - val_loss: 0.1005 - val_accuracy: 0.9674
+Epoch 2/20
+1875/1875 [==============================] - 33s 17ms/step - loss: 0.1032 - accuracy: 0.9681 - val_loss: 0.0761 - val_accuracy: 0.9741
+Epoch 3/20
+1875/1875 [==============================] - 33s 18ms/step - loss: 0.0700 - accuracy: 0.9778 - val_loss: 0.0645 - val_accuracy: 0.9786
+Epoch 4/20
+1875/1875 [==============================] - 32s 17ms/step - loss: 0.0531 - accuracy: 0.9831 - val_loss: 0.0622 - val_accuracy: 0.9787
+Epoch 5/20
+1875/1875 [==============================] - 33s 18ms/step - loss: 0.0419 - accuracy: 0.9863 - val_loss: 0.0638 - val_accuracy: 0.9795
+Epoch 6/20
+1875/1875 [==============================] - 32s 17ms/step - loss: 0.0335 - accuracy: 0.9894 - val_loss: 0.0587 - val_accuracy: 0.9808
+Epoch 7/20
+1875/1875 [==============================] - 33s 17ms/step - loss: 0.0269 - accuracy: 0.9917 - val_loss: 0.0569 - val_accuracy: 0.9814
+Epoch 8/20
+1875/1875 [==============================] - 33s 17ms/step - loss: 0.0232 - accuracy: 0.9924 - val_loss: 0.0747 - val_accuracy: 0.9777
+Epoch 9/20
+1875/1875 [==============================] - 31s 17ms/step - loss: 0.0194 - accuracy: 0.9938 - val_loss: 0.0576 - val_accuracy: 0.9821
+Epoch 10/20
+1875/1875 [==============================] - 29s 16ms/step - loss: 0.0161 - accuracy: 0.9946 - val_loss: 0.0559 - val_accuracy: 0.9835
+Epoch 11/20
+1875/1875 [==============================] - 29s 16ms/step - loss: 0.0142 - accuracy: 0.9954 - val_loss: 0.0584 - val_accuracy: 0.9831
+Epoch 12/20
+1875/1875 [==============================] - 29s 16ms/step - loss: 0.0106 - accuracy: 0.9967 - val_loss: 0.0581 - val_accuracy: 0.9835
+Epoch 13/20
+1875/1875 [==============================] - 30s 16ms/step - loss: 0.0123 - accuracy: 0.9958 - val_loss: 0.0617 - val_accuracy: 0.9824
+Epoch 14/20
+1875/1875 [==============================] - 32s 17ms/step - loss: 0.0098 - accuracy: 0.9969 - val_loss: 0.0581 - val_accuracy: 0.9843
+Epoch 15/20
+1875/1875 [==============================] - 30s 16ms/step - loss: 0.0083 - accuracy: 0.9975 - val_loss: 0.0606 - val_accuracy: 0.9835
+Epoch 16/20
+1875/1875 [==============================] - 33s 17ms/step - loss: 0.0076 - accuracy: 0.9975 - val_loss: 0.0628 - val_accuracy: 0.9831
+Epoch 17/20
+1875/1875 [==============================] - 37s 20ms/step - loss: 0.0070 - accuracy: 0.9979 - val_loss: 0.0671 - val_accuracy: 0.9821
+Epoch 18/20
+1875/1875 [==============================] - 35s 18ms/step - loss: 0.0070 - accuracy: 0.9977 - val_loss: 0.0611 - val_accuracy: 0.9832
+Epoch 19/20
+1875/1875 [==============================] - 33s 18ms/step - loss: 0.0074 - accuracy: 0.9974 - val_loss: 0.0636 - val_accuracy: 0.9837
+Epoch 20/20
+1875/1875 [==============================] - 31s 16ms/step - loss: 0.0053 - accuracy: 0.9984 - val_loss: 0.0705 - val_accuracy: 0.9823
+Loss for the CNN model = 0.070
+Accuracy for the CNN model = 98.230
+
+Process finished with exit code 0
