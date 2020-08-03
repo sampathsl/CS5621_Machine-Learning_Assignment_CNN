@@ -58,7 +58,7 @@ model.add(Dense(num_classes, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # define the noise factor
-noise_factor = 0.25
+noise_factor = 0.05
 X_train = X_train + noise_factor * np.random.normal(loc=0.0, scale=1.0, size=X_train.shape)
 X_test = X_test + noise_factor * np.random.normal(loc=0.0, scale=1.0, size=X_test.shape)
 X_train = np.clip(X_train, 0., 1.)
