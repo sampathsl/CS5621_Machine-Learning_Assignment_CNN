@@ -36,6 +36,7 @@ Y_test = to_categorical(Y_test, 10)
 # create sequential model
 model = Sequential()
 
+# update the model with additional layers with different parameters
 model.add(Conv2D(filters=64, kernel_size=(3, 3), activation="relu", input_shape=(28, 28, 1)))
 
 model.add(Conv2D(filters=64, kernel_size=(3, 3), activation="relu"))
@@ -68,18 +69,19 @@ model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accur
 
 # implement the data augmentation to prevent over fitting
 datagen = ImageDataGenerator(
-    featurewise_center=False,  # set input mean to 0 over the dataset
-    samplewise_center=False,  # set each sample mean to 0
-    featurewise_std_normalization=False,  # divide inputs by std of the dataset
-    samplewise_std_normalization=False,  # divide each input by its std
-    zca_whitening=False,  # apply ZCA whitening
-    rotation_range=10,  # randomly rotate images in the range (degrees, 0 to 180)
-    zoom_range=0.1,  # Randomly zoom image
-    width_shift_range=0.1,  # randomly shift images horizontally (fraction of total width)
-    height_shift_range=0.1,  # randomly shift images vertically (fraction of total height)
-    horizontal_flip=False,  # randomly flip images
-    vertical_flip=False)  # randomly flip images
+    featurewise_center=False,
+    samplewise_center=False,
+    featurewise_std_normalization=False,
+    samplewise_std_normalization=False,
+    zca_whitening=False,
+    rotation_range=10,
+    zoom_range=0.1,
+    width_shift_range=0.1,
+    height_shift_range=0.1,
+    horizontal_flip=False,
+    vertical_flip=False)
 
+# defined fixed batch size
 batch_size = 64
 train_gen = datagen.flow(X_train, Y_train, batch_size=batch_size)
 test_gen = datagen.flow(X_test, Y_test, batch_size=batch_size)
